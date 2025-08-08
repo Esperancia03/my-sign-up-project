@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Kolker Brush';
+    src: url(fonts/KolkerBrush-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Irish Grover';
+    src: url(fonts/irish-grover.regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cambo';
+    src: url(fonts/Cambo-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body{
+    background-color: #617358;
+}
+
+
+
+.header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+
+
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+
+    
+}
+.nav-left ,
+.nav-right {
+    display: flex;
+         align-items: center;
+        margin: 30px;
+        gap: 40px;
+}
+
+.nav-left a,
+.nav-right a{
+
+    font-size: 24px;
+    font-style: normal;
+    color: #ffffff;
+    font-family: 'Cambo', serif;
+    text-decoration:none;
+    position: relative;
+    outline: none;
+    padding-bottom: 12px;;
+
+}
+
+
+.nav-left a::after,
+.nav-right a:after{
+    content: '';
+    font-weight: 600;
+    left:-5px;
+    right: -5px;
+    background-color: #ffffff;
+    position: absolute;
+    height: 5px;
+    transform:scaleX(0);
+    transform-origin: center;
+    bottom: 0;
+}
+.nav-left a:focus::after,
+.nav-right a:focus::after,
+.nav-left a:active::after,
+.nav-right a:active::after{
+    transform:scaleX(1);
+}
+
+
+.logo a{
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Kolker Brush', cursive;
+    font-size: 96px;
+    text-align: center;
+
+
+}
+
+
+.sign-login-container{
+display: flex;
+justify-content: center;
+margin: 50px auto;
+background-color: rgba(255, 255, 255, 0.4);
+padding-left: 40px;
+width: 519px;
+border-radius: 50px;
+height: 666px;
+
+
+}
+
+.sign-up-infos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.sign-up-infos h2{
+
+         font-family: 'Irish Grover', cursive;
+         font-size: 24px;
+         margin: 0;
+         margin-left: 25px;
+}
+
+.sign-up-title{
+    
+    display: flex;
+    justify-content:space-between;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    gap: 30%;
+    width: 416.39px; 
+}
+
+.sign-up-title a{
+     font-family: 'Irish Grover', cursive;
+     font-size: 30px;
+     margin: 30px auto;
+     text-decoration: none;
+     color: #000000;
+     justify-content: space-between;
+     text-align: center;
+         position: relative;
+         padding: 18px;;
+
+     
+  
+}
+
+.sign-up-inputs{
+    font-size: 24px;
+    height: 10px;
+    border-radius: 40px;
+    height: 55.51px;
+    width: 416px;
+    margin: 0;
+    margin-bottom: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+.sign-up-title a::after{
+    content: '';
+    left: -5%;
+    right: -5px;
+    background-color: #000000;
+    bottom: 0px;
+    position: absolute;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    height: 5px;
+
+
+}
+ 
+
+.sign-up-title a:active::after
+{
+    transform: scaleX(1);
+
+}
+
+.submit{
+    height: 36.64px;
+    width: 221.3;
+    align-items: center;
+    border-radius: 50px;
+    font-size: 16px  ;
+    font-family: 'Irish Grover', cursive;
+    color: #ffffff;
+    background-color: #617358;
+    border: #617358;
+    margin-left: 22%;
+    cursor: pointer;
+
+
+}
+
+.or-login{
+    display: flex;
+    gap: 5px;
+  font-family: 'Irish Grover', cursive;
+    margin-left: 38%;
+    margin-top: 10px;
+    font-size: 16;
+
+ }
+.or-login a{
+    text-decoration: none;
+
+}

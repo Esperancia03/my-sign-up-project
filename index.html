@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up/Login</title>
+    <link rel="stylesheet" href="design.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  </head>
+<body>
+
+    <header class="header">
+    
+       <nav class="navbar">
+
+        <div class="nav-left">
+        <a href="#">Search</a>
+         <a href="#">Home</a>
+          <a href="#">Donate</a> 
+        </div>
+
+        <div class="logo">
+         <a href="#" class="logo"> RaiseUp.</a>
+        </div>
+
+        
+        <div class="nav-right">
+          <a href="#">About</a>
+           <a href="#">Contacts</a>
+            <a href="#sign-login">Sign-Up / Login</a>
+        </div>
+
+       </nav>
+
+
+    </header>
+
+    <section id="sign-login" class="sign-login">
+ 
+     <div class="sign-up-title">
+               <a href="#" class="tab-link active" data-target="sign-up-form">SIGN-UP</a>
+               <a href="#"class="tab-link" data-target="login-form">LOGIN</a>
+
+
+               </a>
+            </div>
+
+        <form action="" class="sign-up-infos" id="sign-up-form">
+           
+            
+            <h2>Full Name</h2>
+            <input type="text"  class="sign-up-inputs" required>
+            
+           <h2>Email</h2>
+            <input type="email" class="sign-up-inputs" required>
+            
+          <h2>Password</h2>
+            <input  type="password" class="sign-up-inputs" required>
+           
+            <button class="submit"> Create Account</button>
+            
+            <div class="or-login">
+              <h4>Or</h4>
+            <a href="#" > Login</a>  
+            </div>
+         
+            
+        </form>
+
+        <form action="" class="sign-up-infos" id="login-form">
+
+          <h2>Email</h2>
+            <input type="email" class="sign-up-inputs" required>
+            
+          <h2>Password</h2>
+            <input  type="password" class="sign-up-inputs" required>
+           
+            <button class="submit"> Create Account</button>
+            
+            <div class="or-login">
+              <h4>Or</h4>
+            <a href="#" > Create Account</a>  
+            </div>
+
+        </form>
+         
+        
+
+
+     </div>
+        
+    </section>
+        <script src="script.js"></script>
+
+</body>
+</html>
