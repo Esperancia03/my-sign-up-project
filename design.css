@@ -43,7 +43,6 @@ body{
 
 .navbar {
     display: flex;
-    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
 
@@ -86,10 +85,8 @@ body{
     transform-origin: center;
     bottom: 0;
 }
-.nav-left a:focus::after,
-.nav-right a:focus::after,
-.nav-left a:active::after,
-.nav-right a:active::after{
+.nav-left a.active::after,
+.nav-right a.active::after{
     transform:scaleX(1);
 }
 
@@ -186,7 +183,7 @@ height: 666px;
 }
  
 
-.sign-up-title a:active::after
+.sign-up-title a.active::after
 {
     transform: scaleX(1);
 
@@ -240,7 +237,7 @@ height: 666px;
 }
 
 .tab-link.active{
-    border-bottom: 3px solid #000; 
+    border-bottom:none; 
     color: #000;
 }
 
