@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function()
     const signUpForm = document.getElementById("sign-up-form");
     const loginForm = document.getElementById("login-form");
 
+    const navLinks = document.querySelectorAll(".nav-left a, .nav-right a");
+
 //function that switches the sign-up tab wiith thhe login tab vice versa
 function switchTab(targetId){
    
@@ -19,7 +21,7 @@ function switchTab(targetId){
 
     document.getElementById(targetId).style.display = "block";
 
-    document.querySelector(`.tab-link[data-target="${targetId}"]`)
+    document.querySelector(`.tab-link[data-target="${targetId}"]`).classList.add("active");
 
 }
 
@@ -32,6 +34,13 @@ tabLinks.forEach(link => {
     });
 
  });
+
+   navLinks.forEach(link => {
+        link.addEventListener("click", function() {
+            navLinks.forEach(l => l.classList.remove("active"));
+            this.classList.add("active");
+        });
+    });
  switchTab("sign-up-form")
 
 
