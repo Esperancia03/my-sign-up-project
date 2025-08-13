@@ -36,7 +36,8 @@
     </header>
 
     <section id="sign-login" class="sign-login">
- 
+      
+ <!--Tab class(will will use it in the js file)-->
      <div class="sign-up-title">
                <a href="#" class="tab-link active" data-target="sign-up-form">SIGN-UP</a>
                <a href="#"class="tab-link" data-target="login-form">LOGIN</a>
@@ -44,7 +45,7 @@
 
                </a>
             </div>
-
+<!--this is for the sign-up form-->
         <form action="" class="sign-up-infos" id="sign-up-form">
            
             
@@ -61,12 +62,12 @@
             
             <div class="or-login">
               <h4>Or</h4>
-            <a href="#" > Login</a>  
+            <a href="#" class="tab-link" data-target="login-form"> Login</a>  
             </div>
          
             
         </form>
-
+<!--this is for the login form we use almost the same info that we did used in the sign-up form-->
         <form action="" class="sign-up-infos" id="login-form">
 
           <h2>Email</h2>
@@ -75,11 +76,11 @@
           <h2>Password</h2>
             <input  type="password" class="sign-up-inputs" required>
            
-            <button class="submit"> Create Account</button>
+            <button class="submit"> Login</button>
             
-            <div class="or-login">
+            <div class="or-sign-up">
               <h4>Or</h4>
-            <a href="#" > Create Account</a>  
+            <a href="#" class="tab-link" data-target="sign-up-form"> Create Account</a>  
             </div>
 
         </form>
@@ -90,7 +91,7 @@
      </div>
         
     </section>
-        <script src="script.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
